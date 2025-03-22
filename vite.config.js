@@ -15,12 +15,14 @@ export default defineConfig({
     vueDevTools(),
   ],
   build: {
-    minify: "terser", // Use a single minifier
-    chunkSizeWarningLimit: 1000, // Reduce chunk warnings
-    cssCodeSplit: false, // Avoid extra processing
+    minify: "terser",
+    chunkSizeWarningLimit: 1000,
+    cssCodeSplit: false,
   },
-  server:{
-    port: 3000,
+  server: {
+    fs: {
+      strict: false
+    }
   },
   resolve: {
     alias: {
