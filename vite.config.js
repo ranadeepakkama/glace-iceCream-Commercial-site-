@@ -14,6 +14,11 @@ export default defineConfig({
     tailwindcss(),
     vueDevTools(),
   ],
+  build: {
+    minify: "terser", // Use a single minifier
+    chunkSizeWarningLimit: 1000, // Reduce chunk warnings
+    cssCodeSplit: false, // Avoid extra processing
+  }
   server:{
     port: 3000,
   },
