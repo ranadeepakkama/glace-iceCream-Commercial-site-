@@ -10,6 +10,7 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 
+
 import App from './App.vue'
 import router from './router'
 

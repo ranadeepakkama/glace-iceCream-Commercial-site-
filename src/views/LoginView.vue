@@ -2,6 +2,7 @@
     import {auth} from '../components/Auth'
     import {signInWithPopup,GoogleAuthProvider,signInWithEmailAndPassword} from 'firebase/auth'
     import {useRouter} from 'vue-router'
+    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     import {ref} from 'vue'
     const router = useRouter()    
     
@@ -40,7 +41,7 @@
                         <input id="name" v-model="inputUser"  class="outline p-1 rounded-1" required type="text" placeholder="Enter Name"/>
                     </div>
                     <div class="mb-3">
-                        <input id="name" v-model="inputPassword" class="outline p-1 rounded-1" required type="password" placeholder="Enter Password"/>
+                        <input id="password" v-model="inputPassword" class="outline p-1 rounded-1" required type="password" placeholder="Enter Password"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <p>{{ error }}</p>
@@ -48,7 +49,7 @@
             </div>
             <div >
                 <h1 class="text-sm mt-4">Sign with Google</h1><br/>
-                <button class="btn btn-outline-primary spacing-0" @click="onClickSignin"><i class="fa-brands fa-google text-3xl"></i></button> 
+                <button class="btn btn-outline-primary spacing-0 font-bold" @click="onClickSignin">G</button> 
             </div>
             
         </div>

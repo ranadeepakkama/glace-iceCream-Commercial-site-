@@ -15,8 +15,7 @@
     const unsubscribe = onAuthStateChanged(auth, (person) => {
       user.value = person || null;
     });
-
-    // ✅ Cleanup on component unmount
+    
     onUnmounted(() => unsubscribe());
   });
 
