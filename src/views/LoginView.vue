@@ -14,7 +14,7 @@
             const provider = new GoogleAuthProvider()
             const result = await signInWithPopup(auth,provider)
             console.log(result.user)
-            router.push("/home")
+            router.push("/")
         }catch(e){
             console.log(e.message)
         }
