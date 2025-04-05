@@ -10,6 +10,7 @@ import CommunityEvent from '@/views/CommunityEvent.vue'
 import CustomOrders from '@/views/CustomOrders.vue'
 import Delivery from '@/views/Delivery.vue'
 import SeasonSpecial from '@/views/SeasonSpecial.vue'
+import IceCreamTypes from '@/views/IceCreamTypes.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,7 +26,8 @@ const router = createRouter({
     {path:'/customOrders', name:'customOrder',component: CustomOrders},
     {path:'/communityEvent', name:'communityEvent',component: CommunityEvent},
     {path:'/seasonalSpecials', name:'seasonSpecial',component: SeasonSpecial},
+    {path:'/iceCreamTypes', name:'iceCreamTypes',component:IceCreamTypes}
   ],
 })
-
+ 
 export default router

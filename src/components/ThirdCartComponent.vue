@@ -25,14 +25,14 @@
                 <div class="carousel-inner rounded-5">
                     <div class="carousel-item active">
                         <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/d7de9ba7-7957-4885-c344-e7b926816500/public" class="d-block w-100 h-[490px]" alt="img-1">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="bg-black/20 rounded carousel-caption d-none d-md-block">
                         <h5>Delight in a Flavorful Experience</h5>
                         <p>Glace offers an exquisite array of artisanal ice cream, crafted with premium ingredients to ensure each scoop is a delightful experience. Explore our menu and discover your next favorite flavor.</p>
                     </div>
                     </div>
                     <div class="carousel-item">
                     <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/1c05d169-ec1f-4c09-f970-a98be7f48000/public" class="d-block w-100 h-[490px]" alt="img-2">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="bg-black/20 rounded  carousel-caption d-none d-md-block">
                         <h5>Sweeten Your Moments with Glace</h5>
                         <p>Whether you're celebrating a special occasion or simply treating yourself, our dedicated service ensures that every moment is sweeter with Glace.</p>
                     </div>

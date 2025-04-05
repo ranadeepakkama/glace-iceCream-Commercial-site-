@@ -1,7 +1,16 @@
+<script setup> 
+    import { useRouter } from 'vue-router'
+    const router = useRouter()
+    const clickButton = () => {
+        router.push('/iceCreamFlavour')
+        console.log('button clicked')
+    }
+</script>
+
 <template>
     <div class="ml-5 md:m-5  flex flex-column w-[160vw] md:w-[100vw] bg-sky-200 pt-3 pb-3 rounded-5 md:max-w-[98%]" style="color: #fff;">
         <div class="flex justify-start items-center ml-5 pl-5"> 
-            <button class="btn btn-outline-primary">Our Exquisite Flavors</button>
+            <button @click="clickButton" class="btn btn-outline-primary">Our Exquisite Flavors</button>
             <h1 class="ml-5 text-black md:text-white">Crafted for Delight</h1>
         </div>
         <div class="List-carts">

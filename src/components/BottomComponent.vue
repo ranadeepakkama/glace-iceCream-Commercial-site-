@@ -4,7 +4,7 @@
 
 
 <template>
-    <div class="flex flex-col md:flex-row w-[178vw] md:w-[100vw] justify-evenly items-right md:items-center rounded-lg mr-5 bg-black text-white pb-2">
+    <div class="flex flex-col md:flex-row w-[178vw] md:w-[100vw] justify-evenly items-right md:items-center rounded-tr-lg rounded-tl-lg mr-5 bg-black text-white pb-2">
         <div class="flex-1 p-3 h-[240px]"> 
             <h2>Glace</h2>
             <h5 class="text-2xl md:text-base">Create your online ice cream experience with glace, offering a delightful selection of flavors just a click away!</h5>
