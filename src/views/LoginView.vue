@@ -33,7 +33,7 @@
 </script>
 
 <template>
-    <div>
+    <div style="margin-top: 130px;">
         <div class="max-w-md mx-auto p-4 bg-teal-100 rounded-lg shadow-lg  border-gray-250 flex flex-col justify-center items-center text-center h-90 mt-5">
             <div> 
                 <form @submit.prevent="onSubmit">

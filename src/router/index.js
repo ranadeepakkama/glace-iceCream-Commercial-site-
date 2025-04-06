@@ -12,22 +12,38 @@ import Delivery from '@/views/Delivery.vue'
 import SeasonSpecial from '@/views/SeasonSpecial.vue'
 import IceCreamTypes from '@/views/IceCreamTypes.vue'
 
+import { getAuth } from 'firebase/auth'
+
+
+const routes = [{path: '/',name:'home',component: HomeView, meta: {requiresAuth: true}}, 
+  {path:'/login',name:'Login',component:LoginView},
+  {path:'/about', name:'about',component: AboutView, meta: {requiresAuth: true}},
+  {path:'/blog', name:'blog',component: BlogView, meta: {requiresAuth: true}},
+  {path:'/contact', name:'contact',component: ContactView, meta: {requiresAuth: true}},
+  {path:'/menu', name:'menu',component: MenuView,meta: {requiresAuth: true}},
+  {path:'/iceCreamFlavour', name:'flavours',component: IceCreamFlavour, meta: {requiresAuth: true}},
+  {path:'/deleveries', name:'delivery',component: Delivery, meta: {requiresAuth: true}},
+  {path:'/customOrders', name:'customOrder',component: CustomOrders, meta: {requiresAuth: true}},
+  {path:'/communityEvent', name:'communityEvent',component: CommunityEvent, meta: {requiresAuth: true}},
+  {path:'/seasonalSpecials', name:'seasonSpecial',component: SeasonSpecial, meta: {requiresAuth: true}},
+  {path:'/iceCreamTypes', name:'iceCreamTypes',component:IceCreamTypes, meta: {requiresAuth: true}}
+]
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {path: '/',name: 'home',component: HomeView},
-    {path:'/login',name:'Login',component:LoginView},
-    {path:'/about', name:'about',component: AboutView},
-    {path:'/blog', name:'blog',component: BlogView},
-    {path:'/contact', name:'contact',component: ContactView},
-    {path:'/menu', name:'menu',component: MenuView},
-    {path:'/iceCreamFlavour', name:'flavours',component: IceCreamFlavour},
-    {path:'/deleveries', name:'delivery',component: Delivery},
-    {path:'/customOrders', name:'customOrder',component: CustomOrders},
-    {path:'/communityEvent', name:'communityEvent',component: CommunityEvent},
-    {path:'/seasonalSpecials', name:'seasonSpecial',component: SeasonSpecial},
-    {path:'/iceCreamTypes', name:'iceCreamTypes',component:IceCreamTypes}
-  ],
+  routes,
+})
+
+router.beforeEach((to,form,next) => {
+  const auth = getAuth();
+  const user = auth.currentUser;
+  const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
+  
+  if(requiresAuth && !user){
+    next('/login')
+  }
+  else{
+    next();
+  }
 })
  
 export default router

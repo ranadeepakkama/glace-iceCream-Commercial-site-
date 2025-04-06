@@ -39,7 +39,7 @@
 <template>
   <nav class="navbar navbar-dark bg-dark fixed-top mb-1">
     <div class="container-fluid">
-      <a class="navbar-brand font-bold ml-2" style="font-size: 30px;" href="/">Glace</a>
+      <router-link to="/" class="navbar-brand font-bold ml-2" style="font-size: 30px;">Glace</router-link>
       <div class="flex justify-between items-center pl-3 pr-1" style="width: 130px;"> 
         <div style="color: #fff;"> 
           <p class="mt-2 ml-3 font-bold" style="color: #fff; font-size: 25px;">
