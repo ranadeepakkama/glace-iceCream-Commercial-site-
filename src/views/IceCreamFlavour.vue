@@ -43,7 +43,7 @@
             <p>Everyone loves to eat the trendy tastes of flavored ice-creams. And, the manufacturing industry mostly uses these below listed flavors to create the different shapes of ice-creams.</p>
         </div>
         <div> 
-            <ul class="grid grid-cols-2 md:grid-cols-3 gap-2">
+            <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 -ml-[35px]">
                 <li class="text-base" v-for="item in flavourList" :key="item.name">
                     <div
                     class="w-full h-[240px] bg-cover bg-center bg-no-repeat rounded-2xl relative overflow-hidden"
