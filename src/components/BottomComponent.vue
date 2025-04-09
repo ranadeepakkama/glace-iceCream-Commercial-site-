@@ -33,10 +33,10 @@
             <div> 
                 <h3>Follow Us</h3>
                 <div class="flex text-5xl md:text-base w-[80vw] md:w-[120px] text-2xl justify-between items-center"> 
-                    <font-awesome-icon :icon="['fab', 'instagram']" />
-                    <font-awesome-icon :icon="['fab', 'x-twitter']" />
-                    <font-awesome-icon :icon="['fab', 'youtube']" />
-                    <font-awesome-icon :icon="['fab', 'facebook']" />
+                    <a href="https://www.instagram.com"><font-awesome-icon :icon="['fab', 'instagram']" /></a>
+                    <a href="https://x.com/?lang=en"><font-awesome-icon :icon="['fab', 'x-twitter']" /></a>
+                    <a href="https://www.youtube.com"><font-awesome-icon :icon="['fab', 'youtube']" /></a>
+                    <a href="https://www.facebook.com"><font-awesome-icon :icon="['fab', 'facebook']" /></a>    
                 </div>
             </div>
         </div>

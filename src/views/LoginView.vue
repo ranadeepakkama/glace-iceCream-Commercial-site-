@@ -2,7 +2,6 @@
     import {auth} from '../components/Auth'
     import {signInWithPopup,GoogleAuthProvider,signInWithEmailAndPassword} from 'firebase/auth'
     import {useRouter} from 'vue-router'
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     import {ref} from 'vue'
     const router = useRouter()    
     
