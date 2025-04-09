@@ -4,7 +4,7 @@
             <h1 style="font-size: 45px;">Savor the Delightful World of <span class="text-sky-300">Ice Cream at Glace.</span></h1>
             <p class="text-2xl md:text-base">Experience the irresistible allure of exquisite ice cream at Glace, where every scoop is a celebration of flavor and creativity. Our extensive selection ranges from timeless classics to innovative artisanal flavors crafted to bring joy and satisfaction.</p>
         </div>
-        <div class="overflow-x-scroll container-cart flex justify-start mt-[15px] items-center ml-5 pl-3 md:w-[68%] w-[97%]" style="margin-top: -55px;">
+        <div class="overflow-x-scroll container-cart flex justify-start mt-[15px] pt-[10px] items-center ml-5 pl-3 md:w-[68%] w-[97%]" style="margin-top: -55px;">
             <div class="cart1 bg-cover flex-col flex justify-end items-start m-2 bg-center rounded-4 min-w-[465px]" style="background-image: url('https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/0891bb88-8d57-4e3f-aff8-67986f9af100/public');height: 416px;">
                 <div class="p-2 rounded-3 shadow-lg m-2" style="color: #fff;">
                     <h1 style="font-size: 30px;">Timeless Treats</h1>
