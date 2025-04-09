@@ -1,13 +1,10 @@
 <script setup>
 
-    const creamFlavour = () => {
-
-    }
 </script>
 
 <template>
     <div class="m-5">
-        <div class="m-5 hidden md:block">
+        <div class="hidden md:block">
             <ul class="flex justify-between items-center">
                 <li><router-link to="/iceCreamFlavour"><button class="btn btn-outline-info">Ice Cream Flavors</button></router-link></li>
                 <li><router-link to="/customOrders"><button class="btn btn-outline-info">Custom Orders</button></router-link></li>

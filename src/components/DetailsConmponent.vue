@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-cover bg-center w-[160vw] md:max-w-[92vw] h-screen md:m-5 m-3 rounded-5 flex flex-col justify-center items-center" style="font-weight: bold; color: #fff; background-image: url('https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/251f2ed9-c15d-48b4-687b-afdc74af2b00/public');">
+    <div class="bg-cover bg-center w-[160vw] md:max-w-[98vw] h-screen md:m-5 m-3 rounded-5 flex flex-col justify-center items-center" style="font-weight: bold; color: #fff; background-image: url('https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/251f2ed9-c15d-48b4-687b-afdc74af2b00/public');">
         <div class="text-center max-w-[160vw] md:max-w-[70vw]">
             <h1 class="" style="font-size: 300%;">Dive Into the World of Glace</h1>
             <p class="text-lg p-2 md:text-base md:p-0">Experience the ultimate indulgence as you explore our handcrafted ice cream creations. We blend traditional favorites with exciting new flavors, elevating every scoop to a delightful experience.</p>

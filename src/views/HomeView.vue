@@ -11,7 +11,7 @@
 
 <template>
     <Navbar/>
-    <div class="mt-5">
+    <div class="mt-5 w-[180%] md:w-screen">
         <MainCartComponent/>
         <AboutComponent/>
         <ThirdCartComponent/>
