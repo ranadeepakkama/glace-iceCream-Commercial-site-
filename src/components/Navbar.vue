@@ -36,6 +36,13 @@
   };
 </script>
 
+<style>
+.linkItem {
+  color: white;
+  text-decoration: none;
+}
+</style>
+
 <template>
   <nav class="navbar navbar-dark bg-dark fixed-top mb-1">
     <div class="container-fluid">
@@ -69,13 +76,13 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Home</a>
+                  <router-link class="linkItem" to="/">Home</router-link>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/menu">Menu</a>
-                  <a class="nav-link" href="/blog">Blog</a>
-                  <a class="nav-link" href="/about">About</a>
-                  <a class="nav-link" href="/contact">Contact</a>
+                <li class="nav-item flex flex-col">
+                  <router-link class="linkItem" to="/menu">Menu</router-link>
+                  <router-link class="linkItem" to="/blog">Blog</router-link>
+                  <router-link class="linkItem" to="/about">About</router-link>
+                  <router-link class="linkItem" to="/contact">Contact</router-link>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">

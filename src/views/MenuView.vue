@@ -1,5 +1,9 @@
+<script setup>
+    import MenuComponent from '@/components/MenuComponent.vue';
+</script>
+
 <template>
-    <div style="margin-top: 130px;"> 
-        <h1>Menu page.. </h1>
+    <div style="margin-top: 80px;"> 
+        <MenuComponent/>
     </div>
 </template>
