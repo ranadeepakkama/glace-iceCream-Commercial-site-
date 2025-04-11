@@ -21,12 +21,21 @@ const IceCreamBallMenu = ref([
 ])
 </script>
 <style scoped>
-.cart{
-    width: full;
-    padding: 10px;
-    border-radius: 7px;
-    margin: 10px;
+.cart {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
 }
+
+@media screen and (min-width: 764px) {
+  .cart {
+    margin-left: 160px;
+    width: 60%;
+    margin-bottom: 5px;
+  }
+}
+
+
 img{
     border-radius: 14px;
     display: hidden;
@@ -62,7 +71,7 @@ h2{
                         </ul>
                     </div>
                     <div>
-                        <img class="hidden" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGx4ypc6fREuYwYMgrAJFUef7BPkkI9eWzgw&s" alt="iceCreamCup">
+                        <img class="hidden md:block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGx4ypc6fREuYwYMgrAJFUef7BPkkI9eWzgw&s" alt="iceCreamCup">
                     </div>
                 </div>
         

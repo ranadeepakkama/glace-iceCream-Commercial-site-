@@ -17,10 +17,10 @@
         <div class="flex-1 -mt-[30px] md:mt-0 justify-center p-3 h-[240px]">
             <h3>Quick Links</h3>
             <ul class="flex flex-row justify-around items-center md:flex-col text-2xl">
-                <li><a class="nav-link" href="/menu">Menu</a></li>
-                <li><a class="nav-link" href="/blog">Blog</a></li>
-                <li><a class="nav-link" href="/about">About</a></li>
-                <li><a class="nav-link" href="/contact">Contact</a></li>
+                <router-link class="linkItem" to="/menu">Menu</router-link>
+                <router-link class="linkItem" to="/blog">Blog</router-link>
+                <router-link class="linkItem" to="/about">About</router-link>
+                <router-link class="linkItem" to="/contact">Contact</router-link>
             </ul>
         </div>
         <div class="flex-1 -mt-[30px] md:mt-0 justify-center h-[240px] p-3"> 
